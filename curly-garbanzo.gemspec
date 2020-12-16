@@ -31,7 +31,12 @@ Gem::Specification.new do |s|
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
   # = MANIFEST =
   s.files = %w[
+    Gemfile
+    Gemfile.lock
     README.md
+    Rakefile
+    curly-garbanzo.gemspec
+    lib/curly-garbanzo.rb
   ]
   # = MANIFEST =
 end

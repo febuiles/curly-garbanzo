@@ -65,8 +65,8 @@ end
 
 desc "Create tag v#{version} and build and push #{gem_file} to Rubygems"
 task :release => :build do
-  unless `git branch` =~ /^\* master$/
-    puts "You must be on the master branch to release!"
+  unless `git branch` =~ /^\* main$/
+    puts "You must be on the main branch to release!"
     exit!
   end
   sh "git commit --allow-empty -a -m 'Release #{version}'"
